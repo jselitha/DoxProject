@@ -1,5 +1,4 @@
 // DoxBoard.java
-//Jesse Selitham 62698383
 
 // exported methods:
 //
