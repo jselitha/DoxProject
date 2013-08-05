@@ -32,3 +32,12 @@ AB.. — a string indicating which boxes belong to which player, A, B, or . mean
 Y — Y indicates that alpha-beta pruning should be used, N means don't use alpha-beta
 1 — indicates which board evaluation heuristic shold be used. 1 is a supplied simpleBoardEval method, and 2 is one that you write. 
 
+
+My AI implementation is based off the Minimax decision rule, found here:
+https://en.wikipedia.org/wiki/Minimax
+
+There are two possible choices for the evauation function when choosing moves, the first is a simple evaluation, the second is a more sophisticated utility function, found here:
+http://www.rowlandoflaherty.com/wp-content/uploads/2012/04/Project1_Paper_DotsAndBoxes_OFlaherty_Wu.pdf
+
+The program also implement the alpha-beta pruning search algorithm, which can be read about here:
+http://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning
