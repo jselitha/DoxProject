@@ -1,5 +1,4 @@
-// Dox.java - CS 171, Winter, 2013
-//Jesse Selitham 62698383
+// Dox.java 
 
 import java.util.*;
 
@@ -34,15 +33,15 @@ public class Dox
                                         miniMaxPliesP, useAlphaBetaP, evaluationFunctionP);
         
         
-  //      long avgTime = 0;
-   //     for (int x = 0; x < 100; x++)
-   //     {
+        //long avgTime = 0;
+        //for (int x = 0; x < 100; x++)
+        //{
         move = 0;
         dox = new Dox(numRowsP, numColsP, linesP, boxesP,
                                         miniMaxPliesP, useAlphaBetaP, evaluationFunctionP);
 
         // With this block of code, the computer chooses a single move and
-            // that's it.  This matches the assignment.
+        // that's it.  This matches the assignment.
         System.out.println(dox.board + "\n");
         long startTime = System.nanoTime();
         move = dox.chooseMove(whoseTurnP);
@@ -52,10 +51,10 @@ public class Dox
         dox.board = dox.board.applyMove(move, whoseTurnP);
         System.out.println(dox.board);
         System.out.println("Computer gets another move: " + dox.board.anotherMove); 
-   //     avgTime = avgTime + elapsedTime;
-   //     }
+        //avgTime = avgTime + elapsedTime;
+        //}
         
-     //   System.out.format("Average Time(1000 cycles): %,d%n", avgTime/100);
+        //System.out.format("Average Time(1000 cycles): %,d%n", avgTime/100);
         
         /*
         // With this block of code, the computer and human play interactively.
@@ -92,9 +91,9 @@ public class Dox
                 System.out.println("The score is " + dox.board.numBoxesOwnedBy("A") +
                                 " points for A, and " + dox.board.numBoxesOwnedBy("B") +
                                 " points for B.");
-              */
+        */
         
-       // Used to run simulation to play against different computer vs. computer simulation
+        //Used to run simulation to play against different computer vs. computer simulation
         /*
         Dox dox2 = new Dox(numRowsP, numColsP, linesP, boxesP, 1, true, 2);
         boolean isComputersTurn = true;   // the computer always starts
@@ -132,7 +131,9 @@ public class Dox
         System.out.println("Final position:\n" + dox.board);
         System.out.println("The score is " + dox.board.numBoxesOwnedBy("A") +
                         " points for A, and " + dox.board.numBoxesOwnedBy("B") +
-                        " points for B.");    */
+                        " points for B.");    
+        */
+        
         } 
 
         private int numRows;
@@ -153,7 +154,7 @@ public class Dox
                 board = new DoxBoard(numRows, numCols, lines, boxes);
         }
 
-        // This version is NOT minimax - you should modify or remove it.
+
         public int chooseMove(String whoseTurn)
         {
                 List<Integer> validMoves = board.validMoves();
@@ -281,8 +282,8 @@ public class Dox
                 else if (evalFunc == 1) return simpleBoardEval(board, whoseTurn);        
             }                     
             
-           // if (depth == 0 || board.gameIsOver() && evalFunc == 1) return simpleBoardEval(board, whoseTurn);
-           // else if (depth == 0 || board.gameIsOver() && evalFunc == 2)
+            // if (depth == 0 || board.gameIsOver() && evalFunc == 1) return simpleBoardEval(board, whoseTurn);
+            // else if (depth == 0 || board.gameIsOver() && evalFunc == 2)
 
             for (int move: board.validMoves())
             {
