@@ -30,5 +30,5 @@ AB.. — a string indicating which boxes belong to which player, A, B, or . mean
 *	 	*	 	*
 3 — a number indicating the maximum number of plies the algorithm should look ahead.
 Y — Y indicates that alpha-beta pruning should be used, N means don't use alpha-beta
-1 — indicates which board evaluation heuristic shold be used. 1 is a supplied simpleBoardEval method, and 2 is one that you write.
+1 — indicates which board evaluation heuristic shold be used. 1 is a supplied simpleBoardEval method, and 2 is one that you write. 
 
